@@ -139,7 +139,7 @@ sub main(){
 	'pagemargins=f{6}'   => \my @pagemargins,
 	'labelmargins=f{4}'  => \my @labelmargins,
 	'noheader'	     => \$noheader,
-	'fontsize=i'           => \$fontsize,
+	'fontsize=i'         => \$fontsize,
 	);
 
     die pod2usage(1) unless $input;
