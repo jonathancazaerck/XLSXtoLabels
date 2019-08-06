@@ -70,7 +70,7 @@ END
     print $fh "\\end{labels}\n\\end{document}\n";
     close $fh;
     system("pdflatex $outputtexfile");
-    print colored(['bold green on_white'], "Done! Output file is $output.pdf                                                                    ")."\n";
+    print colored(['bold green on_white'], "Done! Output file is $output.pdf.                                                                   ")."\n";
 }
 
 sub cutOffFileExtension{
@@ -86,7 +86,7 @@ sub setMargins{
 
     if ($type ne "custom") {
 	my $cfg = Config::IniFiles->new( -file => $configfilename );
-	if (!$cfg->SectionExists($type)){die "Type not availible in configuration file"}
+	if (!$cfg->SectionExists($type)){die "Type not available in configuration file"}
 	$margins{'cols'}	      = $cfg->val($type, 'cols');
 	$margins{'rows'}	      = $cfg->val($type, 'rows');
 	$margins{'leftPageMargin'}    = $cfg->val($type, 'leftPageMargin');

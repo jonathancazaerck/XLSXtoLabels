@@ -21,7 +21,7 @@ Script to convert MS Excel Spreadsheets to labels using LaTeX and Perl.
 
 ## Usage
 1. Create an Excel spreadsheet as shown in the Examples folder
-2. Run the script by using the command `./script.pl`. The usage information with availible options will be shown when no arguments are given.
+2. Run the script by using the command `./script.pl`. The usage information with available options will be shown when no arguments are given.
 3. The output are two files, one is the TeX-file and the other one is the PDF-file that is compiled from the source code of the TeX-file.
 
 ## Predefined dimensions
