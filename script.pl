@@ -14,7 +14,7 @@ sub generate{
     my ($input, $output, $debug, $fontsize, $noheader, %margins) = @_;
     my $inputxlsxfile = $input.".xlsx";
     my $outputtexfile = $output.".tex";
-    open(my $fh, '>', $outputtexfile);
+    open(my $fh, '>:encoding(UTF-8)', $outputtexfile);
 
     my $permeable = <<END;
 \\documentclass[a4paper,${fontsize}pt]{extarticle}
